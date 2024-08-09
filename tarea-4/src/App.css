@@ -1,0 +1,59 @@
+imf{
+  width: 10%;
+  height: 70%;
+  margin:0%;
+  border-radius: 10px;
+
+
+}
+h1{
+  width: 80%;
+  padding: 0px;
+  margin: 0px;
+
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid #000000aa;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px black;
+  max-width: 300px;
+  margin: 15px;
+  background-color: #fff;
+  transition: box-shadow 0.3s ease;
+  text-align: center;
+  background-color:greenyellow;
+  position: relative;
+  border: 5px solid black;
+  }
+  .sobre{
+    position: relative;
+    top: -40px;
+    border: 3px solid black;
+    width: 100%;
+    border-radius: 80px;
+    background-color:greenyellow;
+  }
+  .sobre2{
+    position: relative;
+    top: -40px;
+    width: 97%;
+    font-size: large;
+    font-family: cursive;
+  }
+body{
+  margin: 5%;
+  background-image: url("./images.jepg"); 
+} 
+.boder{
+  display: flex;
+  flex-wrap: wrap;
+}
+.titulo{
+  color: rgb(228, 69, 6);
+ font-size: xx-large;
+ font-family: fantasy;
+}

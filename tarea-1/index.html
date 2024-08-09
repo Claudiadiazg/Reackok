@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de compras Mercado</title>
+</head>
+<body>
+    <h1>Tienda Max</h1>
+    <h2>Lista de Compras</h2>
+    <div id="imagen-container"></div>
+
+    <ul>
+        <li>Verduras</li>
+        <li>Granos</li>
+        <li>Aseo Hogar</li>
+        <li>Aseo personal</li>
+        <li>Comida Mascotas</li>
+        <li>Productos de Belleza</li>
+    </ul>
+
+    <script>
+       
+        var img = document.createElement('img');
+        img.src = 'images.jpg'; 
+        img.alt = 'Lista de mercado 2024'; 
+        img.width = 500; 
+        img.height = 300; 
+
+        
+        img.style.border = '2px solid black'; 
+
+  
+        document.getElementById('imagen-container').appendChild(img);
+    </script>
+</body>
+</html>
