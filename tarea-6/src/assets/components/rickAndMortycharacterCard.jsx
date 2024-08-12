@@ -1,25 +1,31 @@
 import React, { useEffect, useState } from 'react';
 import CharacterCard from './characterCard';
 
-const RickAndMortyCharacterCard = (props) => {
+const RickAndMortyCharacterCard = () => {
+    //const [charactersList, setCharactersList] = useState([]);
+    const [characterList, setCharacterList] = useState([]);
     
-    const [name, setName] = useState("");
-    const [image, setImage] = useState("");
-    const [genero, setGenero] = useState("");
-    const [status, setStatus] = useState("");
+    // const [name, setName] = useState("");
+    // const [image, setImage] = useState("");
+    // const [genero, setGenero] = useState("");
+    // const [status, setStatus] = useState("");
 
-    const RickAndMortyCharacterId = props.id;
+   // const RickAndMortyCharacterId = props.id;
 
     useEffect(() => {
         // useEffect se ejecutará una única vez cuando el componente se monte
-        fetch(`https://rickandmortyapi.com/api/character/${RickAndMortyCharacterId}`)
+        fetch("https://rickandmortyapi.com/api/character/?page=1")
+
 
             .then((response) => response.json())
             .then((result) => {
+                console.log(result)
+                setCharacterList(result.results)
+                
                 
                 setName(result.name);
                 setImage(result.image);
-                setGenero(result.species);
+                setGenero(result.gender);
                 setStatus(result.status);
             })
             .catch((error) => {
@@ -28,13 +34,22 @@ const RickAndMortyCharacterCard = (props) => {
     }, []); // Dependencia para actualizar si `RickAndMortyCharacterId` cambia
 
     return (
-        <div className='container'>
-            <CharacterCard
-                name={name}
-                image={image}
-                genero={genero}
-                status={status}
+        <div className='container-1'>
+            {
+                characterList.map((characters)=>(
+                <div> 
+                <CharacterCard
+                name={characters.name}
+                image={characters.image}
+                genero={characters.gender}
+                status={characters.status}
             />
+
+                    </div>
+                ))
+            }
+
+           
         </div>
     );
 }
