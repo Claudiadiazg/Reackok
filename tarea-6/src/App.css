@@ -8,11 +8,16 @@ body {
 }
 
 .titulo {
-  font-size: xx-large;
-  font-family: fantasy;
+  /* Title.css */
+.title {
+  font-size: 2em;
+  color: #333;
   text-align: center;
-  margin: 20px;
-  color: rgb(228, 69, 6);
+  margin: 20px 0;
+  font-family: Arial, sans-serif; /* Opcional, para definir la fuente */
+  font-weight: bold; /* Opcional, para hacer el texto más prominente */
+}
+
 }
 
 .bode {

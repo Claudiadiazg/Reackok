@@ -4,7 +4,7 @@ const Details = (props) => {
   return (
     <div>
        <p className='sobre'>
-            <b>Genero:</b>  {props.gender}
+            <b>Genero:</b>  {props.genero}
 
        </p>
        <p className='sobre2'>

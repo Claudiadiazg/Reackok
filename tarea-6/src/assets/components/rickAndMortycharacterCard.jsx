@@ -41,7 +41,7 @@ const RickAndMortyCharacterCard = () => {
                 <CharacterCard
                 name={characters.name}
                 image={characters.image}
-                genero={characters.gender}
+                gender={characters.gender}
                 status={characters.status}
             />
 
