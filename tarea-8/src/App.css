@@ -1,7 +1,7 @@
 /* styles.css */
 body {
   margin: 0;
-  background-image: url("./images.jpeg"); /* Ajusta la ruta según tu archivo */
+  background-color:rgb(134, 139, 47); /* Ajusta la ruta según tu archivo */
   background-size: cover;
   background-position: center;
   font-family: Arial, sans-serif;
@@ -135,7 +135,10 @@ body {
 
 }
 
+.episodiocarta h3{
+  margin: 0;
 
+}
 
 .piedepagina h3{
   margin: 0;

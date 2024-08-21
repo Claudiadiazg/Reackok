@@ -6,7 +6,7 @@ const NavbarComponents = () => {
     <div>
         <ul>
             <li className='links'>
-                <Link href="/">Home </Link>
+                <Link to="/">Home </Link>
                 <Link to="/characters">
                 <div>Go to characters</div>
             </Link>

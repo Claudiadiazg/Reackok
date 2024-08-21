@@ -18,6 +18,7 @@ a {
   color: #646cff;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #535bf2;
 }
@@ -25,10 +26,11 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  justify-content: center; /* Centra horizontalmente */
+  justify-content: center;
+  /* Centra horizontalmente */
   min-width: 320px;
   min-height: 100vh;
-  background-color: #242424;
+  background-image: url(./assets/rick.png);
   color: rgba(255, 255, 255, 0.87);
 }
 
@@ -49,9 +51,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -59,13 +63,16 @@ button:focus-visible {
 
 .contenedor-imagen {
   display: flex;
-  justify-content: center; /* Centra horizontalmente */
- 
+  justify-content: center;
+  /* Centra horizontalmente */
+
 }
 
 .contenedor-imagen img {
-  max-width: 100%; /* Asegúrate de que la imagen no se desborde */
-  height: auto;    /* Mantén la proporción de la imagen */
+  max-width: 100%;
+  /* Asegúrate de que la imagen no se desborde */
+  height: auto;
+  /* Mantén la proporción de la imagen */
 }
 
 
@@ -74,15 +81,17 @@ button:focus-visible {
     color: #213547;
     background-color: #ffffff;
   }
+
   a:hover {
     color: #747bff;
   }
+
   button {
     background-color: #f9f9f9;
   }
 }
 
-.border{
- width: 80%;
- display: flex;
+.border {
+  width: 80%;
+  display: flex;
 }
